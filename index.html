@@ -25,13 +25,49 @@
         <li><a href="#">Bombando</a></li>
         <li><a href="#">Minha lista</a></li>
       </ul>
-      <div class="search">
-        <input type="text" placeholder="Procurar" />
-        <i class="fa fa-search" aria-hidden="true"></i>
-      </div>
     </header>
+    <div class="search">
+      <input type="text" placeholder="Procurar" />
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
     <div class="banner">
       <img src="./assets/img/bg.jpg" class="bg" alt="Gotham BackGround" />
+      <div class="content">
+        <img
+          src="./assets/img/logonome.png"
+          class="title"
+          alt="Titulo de Gotham"
+        />
+        <h4>
+          <span>2014</span>
+          <span><i>16+</i></span>
+          <span>5 temporadas</span>
+          <span>Ação</span>
+        </h4>
+        <p>
+          O detetive novato James Gordon luta contra o crime e a corrupção em
+          Gotham City para vingar o assassinato dos pais de Bruce Wayne.
+        </p>
+        <div class="buttons">
+          <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+          <a href="#"
+            ><i class="fa fa-plus" aria-hidden="true"></i> Minha lista</a
+          >
+        </div>
+      </div>
+      <a class="play" onclick="toggleVideo()"
+        ><img src="./assets/img/play.png" alt="Play" />Assista ao trailer</a
+      >
     </div>
+    <div class="trailer">
+      <video src="./assets/img/trailer.mp4" controls="true"></video>
+      <img
+        src="./assets/img/close.png"
+        class="close"
+        onclick="toggleVideo();"
+        alt="Fechar"
+      />
+    </div>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
